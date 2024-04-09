@@ -1,0 +1,361 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+.logo-container {
+  display: inline-flex; /* Changed from 'flex' to 'inline-flex' */
+  align-items: center;
+  margin-right: 30px; /* Adjust margin as needed */
+}
+
+.logo-container img {
+  width: 50px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('1.jpg'); /* Replace 'carousel-image.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.content {
+  padding: 50px;
+  font-size: 24px;
+}
+
+/* CSS styles for the body content section */
+
+        /* CSS styles for the hero section */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            background-image: url('1.jpg'); /* Replace 'carousel-image.jpg' with your image path */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+        .content {
+            padding: 50px;
+            font-size: 24px;
+        }
+
+        /* CSS styles for the body content section */
+        .body-content {
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .column {
+            width: calc(33.33% - 40px); /* Adjust as necessary */
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .column img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .column h2 {
+            margin-bottom: 10px;
+        }
+
+        .column p {
+            font-size: 16px;
+        }
+
+        /* CSS styles for the features section */
+        .features-section {
+            background-color: #f0f0f0;
+            padding: 50px 0;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .feature-card {
+            width: calc(33.33% - 40px); /* Adjust as necessary */
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card i {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+        }
+    
+.body-content {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.column {
+  width: calc(33.33% - 40px); /* Adjust as necessary */
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.column img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.column h2 {
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-size: 16px;
+}
+
+.features-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  gap: 20px;
+}
+
+.features-section h2 {
+  font-size: 30px;
+}
+
+.features-card-container {
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-card {
+  min-width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin: auto;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+}
+
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffc107;
+}
+
+main {
+  padding: 40px 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+section p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+  
+  nav ul li a {
+      font-size: 1rem;
+  }
+  
+  main {
+      padding: 20px 0;
+  }
+  
+  section h2 {
+      font-size: 1.2rem;
+  }
+  
+  section p {
+      font-size: 1rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
